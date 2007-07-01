@@ -1,5 +1,5 @@
-%define	version	0.9.1
-%define release	1mdk
+%define	version	0.9.3
+%define release	%mkrel 1
 
 Summary:	Server for Monopoly-like board games
 Name:		monopd
@@ -10,9 +10,10 @@ Group:		Games/Boards
 URL:		http://www.unixcode.org/monopd/
 Source:		http://www.unixcode.org/download/%{name}/%{name}-%{version}.tar.bz2
 Source1:	%{SOURCE0}.sig
+Patch0:		monopd-0.9.3-dosfix.diff
 Buildroot:	%{_tmppath}/%{name}-%{version}-buildroot
 BuildRequires:	libmath++-devel >= 0.0.3
-BuildRequires:	libcapsinetwork-devel >= 0.2.5
+BuildRequires:	libcapsinetwork-devel >= 0.3.0
 
 %description
 Monopd is a dedicated game server daemon for playing Monopoly-like board
@@ -24,6 +25,7 @@ on Monopoly-like games.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %serverbuild
