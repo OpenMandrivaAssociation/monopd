@@ -1,5 +1,5 @@
 %define	version	0.9.3
-%define release	%mkrel 1
+%define release	%mkrel 3
 
 Summary:	Server for Monopoly-like board games
 Name:		monopd
