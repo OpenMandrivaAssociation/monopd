@@ -7,7 +7,7 @@ Version:	%{version}
 Release:	%{release}
 License:	GPL
 Group:		Games/Boards
-URL:		http://www.unixcode.org/monopd/
+URL:		https://www.unixcode.org/monopd/
 Source:		http://www.unixcode.org/download/%{name}/%{name}-%{version}.tar.bz2
 Source1:	%{SOURCE0}.sig
 Patch0:		monopd-0.9.3-dosfix.diff
