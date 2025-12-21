@@ -12,6 +12,11 @@ Source:		http://www.unixcode.org/download/%{name}/%{name}-%{version}.tar.bz2
 Source1:	%{SOURCE0}.sig
 Patch0:		monopd-0.9.3-dosfix.diff
 Buildroot:	%{_tmppath}/%{name}-%{version}-buildroot
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	libmath++-devel >= 0.0.3
 BuildRequires:	libcapsinetwork-devel >= 0.3.0
 
